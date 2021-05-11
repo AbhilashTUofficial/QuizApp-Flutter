@@ -13,7 +13,6 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Quiz app',
       theme: ThemeData(
-        fontFamily: 'lobster',
       ),
       debugShowCheckedModeBanner: false,
 
