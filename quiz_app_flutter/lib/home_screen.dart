@@ -1,4 +1,3 @@
-import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 import 'package:quiz_app_flutter/constants.dart';
 import 'package:quiz_app_flutter/quiz_info_model.dart';
@@ -13,6 +12,7 @@ class Home extends StatefulWidget {
 }
 
 double xp = 0.4;
+
 
 class _HomeState extends State<Home> {
   @override

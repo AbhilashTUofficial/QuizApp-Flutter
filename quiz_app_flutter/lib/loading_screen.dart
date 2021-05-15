@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:dio/dio.dart';
 import 'package:quiz_app_flutter/constants.dart';
+import 'package:http/http.dart' as http;
 
 class Loading extends StatefulWidget {
   const Loading({Key key}) : super(key: key);
@@ -11,13 +11,16 @@ class Loading extends StatefulWidget {
 
 class _LoadingState extends State<Loading> {
   String quiz;
-  Future initState()async{
-      super.initState();
-      var dio = Dio();
-      Response response = await dio.get('https://opentdb.com/api.php?amount=10');
-      print(response.data);
-
+  Future<http.Response> fetchPhotos(http.Client client) async {
+    return client.get(Uri.parse('https://opentdb.com/api.php?amount=10'));
   }
+
+ // initState() async {
+ //      super.initState();
+ //      var dio = Dio();
+ //      Response response = await dio.get('https://opentdb.com/api.php?amount=10');
+ //      print(response.data);
+ //  }
   @override
   Widget build(BuildContext context) {
     double widgetMaxWidth = MediaQuery.of(context).size.width * 0.86;
