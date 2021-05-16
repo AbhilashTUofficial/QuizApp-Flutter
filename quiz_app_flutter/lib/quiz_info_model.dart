@@ -6,10 +6,10 @@ class QuizInfo {
   String difficult;
   int questionNum;
   QuizInfo({
-    @required this.category,
-    @required this.categoryNum,
-    @required this.difficult,
-    @required this.questionNum,
+    required this.category,
+    required this.categoryNum,
+    required this.difficult,
+    required this.questionNum,
   });
 }
 List<QuizInfo> quizInfo=[

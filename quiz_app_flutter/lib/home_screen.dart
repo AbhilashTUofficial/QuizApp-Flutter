@@ -5,7 +5,7 @@ import 'package:quiz_app_flutter/quiz_info_model.dart';
 import 'loading_screen.dart';
 
 class Home extends StatefulWidget {
-  const Home({Key key}) : super(key: key);
+  const Home({ Key? key}) : super(key: key);
 
   @override
   _HomeState createState() => _HomeState();
