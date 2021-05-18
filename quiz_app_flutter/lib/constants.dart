@@ -14,7 +14,8 @@ BoxDecoration contDecoration() {
             blurRadius: 2)
       ]);
 }
-BoxDecoration backgroundDecoration(){
+
+BoxDecoration backgroundDecoration() {
   return BoxDecoration(
     gradient: LinearGradient(colors: [
       Color.fromRGBO(98, 23, 167, 6),

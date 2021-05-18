@@ -5,14 +5,13 @@ import 'package:quiz_app_flutter/quiz_info_model.dart';
 import 'loading_screen.dart';
 
 class Home extends StatefulWidget {
-  const Home({ Key? key}) : super(key: key);
+  const Home({Key? key}) : super(key: key);
 
   @override
   _HomeState createState() => _HomeState();
 }
 
 double xp = 0.4;
-
 
 class _HomeState extends State<Home> {
   @override
@@ -130,7 +129,9 @@ class _HomeState extends State<Home> {
                             ),
                             onTap: () => Navigator.push(
                               context,
-                              MaterialPageRoute(builder: (_) => Loading()),
+                              MaterialPageRoute(
+                                  builder: (_) =>
+                                      QuizScreen(quizInfo[index].categoryNum)),
                             ),
                           );
                         }),
